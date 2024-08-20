@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="estilo_inicio.css" />
+    <title>Iniciar Sesión</title>
+  </head>
+  <body>
+    <section class="form-reg">
+      <div>
+        <a href="/index.html">Inicio</a>
+      </div>
+      <!-- Actualiza el action y el método del formulario -->
+      <form action="/Inicio_Sesion/action_inicio.php" method="POST">
+
+        <h4>Inicio de Sesión</h4>
+
+        <input
+          class="control"
+          type="email"
+          name="correo"
+          id="correo"
+          placeholder="Ingresar Email"
+          required
+        />
+
+        <input
+          class="control"
+          type="password"
+          name="password"
+          id="password"
+          placeholder="Ingresar Contraseña"
+          required
+        />
+
+        <input class="botons" type="submit" name="inicio" value="Iniciar Sesión" />
+        <input class="limpiar" type="reset" value="Limpiar Formulario" />
+
+        <p>
+          Estoy de acuerdo con
+          <a
+            href="https://support.wix.com/es/article/crear-una-pol%C3%ADtica-de-t%C3%A9rminos-y-condiciones#:~:text=Los%20t%C3%A9rminos%20y%20condiciones%20(%22T%C3%A9rminos,propietario%20de%20una%20p%C3%A1gina%20web.&text=Adem%C3%A1s%2C%20existen%20obligaciones%20legales%20para,el%20lugar%20indicado%20para%20hacerlo."
+            target="_blank"
+            >Términos y Condiciones</a
+          >
+        </p>
+
+        <p>
+          <a href="/Formulario_Registro/index.html">No tengo Cuenta</a>
+        </p>
+      </form>
+    </section>
+  </body>
+</html>

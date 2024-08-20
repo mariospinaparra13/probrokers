@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrito de Compras</title>
+  <link rel="stylesheet" href="stylesCart.css"> <!-- Asegúrate de vincular tu archivo CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <header>
+    <nav class="nav-main">
+      <img src="img/Grand.png" alt="TechNews LOGO" class="nav-brand" />
+      <ul class="nav-menu">
+        <li><a href="index.html">Inicio</a></li>
+      </ul>
+      <ul class="nav-menu-right">
+        <li>
+          <a href="index.html" class="cart-icon">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="cart-count">0</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <hr />
+  </header>
+
+  <main>
+    <section class="cart">
+      <h1>Carrito de Compras</h1>
+      <div class="cart-items">
+        <ul id="cart-items-list">
+          <!-- Los productos del carrito se agregarán aquí dinámicamente -->
+        </ul>
+      </div>
+      <div class="cart-summary">
+        <p>Total: <span id="total-price">$0.00</span></p>
+        <button class="clear-cart-btn">Vaciar Carrito</button>
+        <button class="checkout-btn">Proceder al Pago</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="cart.js"></script> <!-- Asegúrate de vincular tu archivo JS -->
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Formulario Registro</title>
+  </head>
+  <body>
+    <section class="form-register">
+      <div>
+        <a href="/index.html">Inicio</a>
+      </div>
+      <form action="action_registro.php">
+        <h4>Formulario Registro</h4>
+      <input
+        class="controls"
+        type="text"
+        name="nombres"
+        id="nombres"
+        placeholder="Ingrese su Nombre" required>
+      <input
+        class="controls"
+        type="text"
+        name="apellido"
+        id="apellido"
+        placeholder="Ingrese su Apellido" required>
+      <input
+        class="controls"
+        type="email"
+        name="correo"
+        id="correo"
+        placeholder="Ingrese su Correo" required>
+      <input
+        class="controls"
+        type="password"
+        name="password"
+        id="password"
+        placeholder="Ingrese su Contraseña" required>      
+
+      <input class="botons" type="submit" value="Register" />
+      <input class="limpiar" type="reset" value="Limpiar" />
+
+
+      <p>Estoy de acuerdo con <a href="https://support.wix.com/es/article/crear-una-pol%C3%ADtica-de-t%C3%A9rminos-y-condiciones#:~:text=Los%20t%C3%A9rminos%20y%20condiciones%20(%22T%C3%A9rminos,propietario%20de%20una%20p%C3%A1gina%20web.&text=Adem%C3%A1s%2C%20existen%20obligaciones%20legales%20para,el%20lugar%20indicado%20para%20hacerlo."target="_blank"">Terminos y Condiciones</a></p>
+      <p><a href="/Inicio_Sesion/frm_index_inicio.html">¿Ya tengo Cuenta?</a></p>
+      </form>
+    </section>
+    <script src="style.js"></script>
+  </body>
+</html>

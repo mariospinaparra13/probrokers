@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proceso de Pago</title>
+  <link rel="stylesheet" href="stylesCheckout.css"> <!-- Asegúrate de vincular tu archivo CSS -->
+</head>
+<body>
+  <header>
+    <nav class="nav-main">
+      <img src="img/Grand.png" alt="TechNews LOGO" class="nav-brand" />
+      <ul class="nav-menu">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="indexCart.html">Carrito</a></li>
+      </ul>
+    </nav>
+    <hr />
+  </header>
+
+  <main>
+    <section class="checkout">
+      <h1>Proceso de Pago</h1>
+      <div class="checkout-summary">
+        <p>Gracias por tu compra. El total a pagar es: <span id="checkout-total">$0.00</span></p>
+        <button id="confirm-payment-btn">Confirmar Pago</button>
+      </div>
+      <!-- Contenedor de opciones de pago -->
+      <div id="payment-options" class="hidden">
+        <h2>Selecciona un método de pago</h2>
+        <button id="pay-pse" class="btn">PSE</button>
+        <button id="pay-banks" class="btn">Bancos</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="checkout.js"></script> <!-- Asegúrate de vincular tu archivo JS -->
+</body>
+</html>
